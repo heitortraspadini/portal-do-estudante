@@ -8,7 +8,10 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    background-color: #e3ecfe;
+    background-color: #e0f4ff;
+}
+span{
+    font-weight: bold;
 }
 
 .barra-pesquisa{
@@ -54,7 +57,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     margin-left: 30px;
-    margin-top: 120px;
+    margin-top: 200px;
 }
 
 .img_dash{
@@ -82,24 +85,22 @@ body{
 }
 
 .financa1{
-    position: relative;
-    left: 10px;
+    position: relative;  
     width: 300px;
     height: 150px;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 24px;
-    background: #FFF;
+    background: #ffffff;
     box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
 }
 .financa2{
     position: relative;
-    left: 10px;
+    flex-direction: column;
     width: 300px;
     height: 150px;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,10 +111,9 @@ body{
 
 .financa3{
     position: relative;
-    left: 10px;
+    flex-direction: column;
     width: 300px;
     height: 150px;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,12 +145,12 @@ body{
 
 .muito-texto{
     grid-area: 8 / 10 / 12 / 13;
-    background-color: black;
     margin-left: 30px;
     margin-top: 15px;
     border-radius: 24px;
-background: #FFF;
-box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    background: #FFF;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
 }
 
 .perfil{
@@ -158,9 +158,7 @@ box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
     background-color: black;
     margin-bottom: 20px;
 }
-.user-image{
 
-}
 .instrutor1, .instrutor2, .instrutor3 {
     width: auto;
     height: auto;
@@ -270,12 +268,150 @@ box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
 
 .texto4{
     position: relative;
-    top: -90px;
-    left: -70px;
+    top: -40px;
+    left: -65px;
 }
 
 .imagem-principal{
     width: 400px;
     position: relative;
     top: 20px;
+}
+
+.usuario{
+    grid-area: 1 / 10 / 3 / 12;
+    display: inline-flex    
+}
+ 
+#john{
+    position: absolute;
+    top: 10px;
+    right: 320px;
+    width: 45px;
+    height: 45px;
+}
+ 
+#doe{
+    margin-left: 12px;
+    font-weight: 600;
+    line-height: 1px;
+}
+ 
+#year{
+    font-weight: 400;
+    line-height: 30px;
+    justify-content: center;
+}
+
+#imagem-financa{
+    position: relative;
+    top: -10px;
+    width: 70px;
+}
+
+#oi{
+    grid-area: 6 / 10 / 7 / 12;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#muito_texto_titulo1{
+    position: relative;
+    grid-area: 8/10/10/12;
+    left: 30px;
+    top: -7px;
+}
+#muito_texto_titulo2{
+    position: relative;
+    grid-area: 8/12/10/12;
+    top: -7px;
+    right: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra{
+    position: relative;
+    width: 90px;
+    left: 200px;
+    top: 20px;
+}
+ 
+.texto-curso1{
+    position: relative;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    bottom: 60px;
+    left: 20px;
+}
+ 
+.texto-curso3{
+    position: relative;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    bottom: 58px;
+    left: 20px;
+}
+ 
+.texto-curso2{
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    text-align: center;
+    max-width: 100px;
+    border-radius: 45px;
+}
+ 
+.texto-curso4{
+    position: relative;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    bottom: 60px;
+    left: 20px;
+}
+ 
+.texto-curso5{
+    position: relative;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    bottom: 58px;
+    left: 20px;
+}
+ 
+.barra-cursos{
+    grid-area: 9 / 3 / 12 / 6;
+    border-radius: 24px;
+    background: #39a7ff;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+ 
+.barra-cursos2{
+    grid-area: 9 / 7 / 12 / 10;
+    border-radius: 24px;
+    background: #bdd9fd;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#cursosenrolados{
+    grid-area: 9/3/10/5;
+}
+#vejatodos{
+    grid-area: 9/9/10/10;
+    display: flex;
+    justify-content: flex-end;
 }
